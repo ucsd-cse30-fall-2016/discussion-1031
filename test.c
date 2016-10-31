@@ -83,7 +83,13 @@ assert(sec_max ==7);
 find_largest_two_ARM( arr+2, 2, &max, & sec_max);
 assert( max == 7);
 assert(sec_max ==7);
-printf("\n Passed all tests \n");
+printf("\n Passed all ARM tests \n");
 
 
+}
+
+int main(){
+  runCtests();
+  runARMtests();
+  return 1;
 }
