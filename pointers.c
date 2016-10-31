@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <assert.h>
 
-
 void find_largest_two(int a[], int n, int *largest, int * sec_largest){
 
    *largest = a[0];
@@ -13,6 +12,8 @@ void find_largest_two(int a[], int n, int *largest, int * sec_largest){
             *sec_largest = *largest; 
             *largest = a[i];
         }
+        else if( a[i]>*sec_largest)
+            *sec_largest = a[i];
             
    }
    return;
@@ -47,4 +48,6 @@ find_largest_two( arr+2, 2, &max, & sec_max);
 assert( max == 7);
 assert(sec_max ==7);
 printf("\n Passed all tests \n");
+
+
 }
